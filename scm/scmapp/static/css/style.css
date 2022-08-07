@@ -1,0 +1,56 @@
+*
+{
+margin: 0px;
+padding: 0px;
+font-family: Fixedsys;
+}
+
+.admin
+{
+height: 200px;
+width: 800px;
+background-color:rgb(164, 164, 236);
+border: 2px solid black;
+margin: 100px 300px;
+position: relative;
+}
+.user
+{
+height: 200px;
+width: 800px;
+background-color:rgb(240, 158, 209);
+border: 2px solid black;
+border-radius: 15px;
+margin: 100px 300px;
+position: relative;
+top: 50px;
+}
+img
+{
+height: 150px;
+}
+h1
+{
+text-align: center;
+}
+#ab
+{
+background-color: palevioletred;
+}
+#ub
+{
+background-color: blue;
+}
+input
+{
+height: 40px;
+width: 300px;
+float: right;
+border: none;
+position:absolute;
+top: 80px;
+left: 300PX;
+color:white;
+font-size: 20px;
+font-weight: bold;
+}

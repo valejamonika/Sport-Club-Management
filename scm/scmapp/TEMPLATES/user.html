@@ -1,0 +1,48 @@
+{% extends 'master.html' %}
+
+{% block title %}
+UserLogin
+{% endblock %}
+
+{% load static %}
+{% block css %}
+<link href="{% static 'css/user.css' %}" rel="stylesheet">
+<style>
+p{
+    font-size:30px;
+   color:rgb(40, 36, 36);
+   text-align:center;
+   margin-top: 5px;
+   
+}
+</style>
+{% endblock %}
+{% block body %}
+<p>{{msg}}</p>
+<div class="login">
+    <div class="login-header">
+        <h1>User Login</h1>
+        <hr>
+    </div>
+
+      <div class="login-form">
+        <form  action="user_check" method="POST">
+            {% csrf_token %}
+        <h3>Enter Username</h3>
+        <input type="text" placeholder="Username" name="uname"/><br>
+        <h3> Enter Password</h3>
+        <input type="password" placeholder="Password" name="password" />
+        <br>
+        <input type="submit" value="Login" class="login-button"/>
+        <input type="reset" value="Reset" class="login-button"/>
+        <br>
+    </form>
+       <div class="data">
+        <a href="for_pas" class="forpas">LOST PASSWORD?</a>
+        <br>
+        <a href="user_reg" class="mam">NEW MEMBER?</a>
+       </div>
+        </div>
+  
+    </div>
+    {% endblock %}

@@ -1,0 +1,57 @@
+*
+{
+ margin: 0px;
+ padding: 0px;
+ font-family:Fixedsys;
+ color: dimgray;
+}
+ .main
+ {
+     width: 500px;
+     height: 550px;
+     background-color: antiquewhite;
+     margin-left: 500px;
+     margin-top: 50px;
+     border-radius: 70px;
+     padding: 40px 50px;
+     line-height: 35px;
+     font-size: 15px; 
+ }
+ input
+ {
+     height: 27px;
+     border-radius: 15px;
+     border: none;
+     font-size:25px ;
+
+ }
+ #abc{
+     width: 18px;
+ }
+ #btn1,#btn2
+ {
+     height: 50px;
+     width: 150px;
+     margin-top: 30px;
+     margin-left: 40px;
+     font-size: 15px;
+ }
+ .mam
+ {
+     font-size: 15px;
+     margin-left: 150px;
+
+ }
+ #btn1,#btn2:hover
+ {
+     background-color: transparent;
+     border: 2px solid red;
+     font-size: 20px;
+
+ }
+ .mam:hover
+ {
+         letter-spacing: 12px;
+         color: darkred;
+         margin-left: 50px;
+ }

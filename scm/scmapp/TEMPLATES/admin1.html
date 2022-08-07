@@ -1,0 +1,31 @@
+{% extends 'master.html' %}
+
+{% block title %}
+AdminLogin
+{% endblock %}
+
+{% load static %}
+{% block css %}
+<link href="{% static 'css/a1.css' %}" rel="stylesheet">
+{% endblock %}
+{% block body %}
+<div class="login">
+    <div class="login-header">
+        <h1>Admin Login</h1>
+        <hr>
+    </div>
+      <div class="login-form">
+        <form  action="" method="">
+        <h3>Enter Username</h3>
+        <input type="text" placeholder="Username"/><br>
+        <h3> Enter Password</h3>
+        <input type="password" placeholder="Password" />
+        <br>
+        <input type="submit" value="Login" class="login-button"/>
+        <input type="reset" value="Reset" class="login-button"/>
+        <br>
+    </form>
+        </div>
+
+    </div>
+{% endblock %}

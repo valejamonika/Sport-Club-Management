@@ -1,0 +1,35 @@
+{% extends 'master.html' %}
+{% block title %}Book Ground{% endblock %}
+{% block css %}
+{% load static %}
+<link href="{% static 'css/groundbooking.css' %}" rel="stylesheet">
+{% endblock %}
+{% block body %}
+
+<div class="main">
+    <div class="login-header">
+        <h1 align="center">User Login</h1>
+       
+        <hr>
+    </div> 
+    <div class="register">
+        <form action="data_ground_booking" method="POST">
+            <h3>Name</h3>
+            <input type="text" size="70" name="uname" id="" value="{{record.name}}">
+            <h3>Email Address</h3>
+            <input type="email" size="70" name="email" id="" value="{{record.email}}">
+            <h3>Enter Mobile Number</h3>
+            <input type="text" size="70" name="contact" id="" value="{{record.contact}}">
+            <h3>Date Of Booking</h3>
+            <input type="date" size="70" id="date" min="{{date}}" name="date">
+            <h3>Time Of Booking</h3>
+            <input type="time" size="70" id="time" id="time" name="time">
+            <input type="submit" id="btn" name="submit" value="Book Ground">
+            <input type="reset" name="reset" value="Clear All" id="btn"><br/><br/>
+            
+            <a href="user.html" class="mam">ALREADY REGISTERED?</a>
+        
+        </form>
+    </div>
+</div>
+{% endblock %}

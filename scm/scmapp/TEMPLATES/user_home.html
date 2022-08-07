@@ -1,0 +1,39 @@
+{% extends 'master.html' %}
+{% block title %}Welcome User{% endblock %}
+{% block css %}
+{% load static %}
+<link href="{% static 'css/userhome.css' %}" rel="stylesheet">
+{% endblock %}
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-xl-12 col-lg-12">
+          <h1>Welcome!!!!! {{name}}</h1>
+            {{status}}
+        </div>
+    </div>
+</div>
+{% if 'u_name'  in request.session %}
+<a class="nav-link btn btn-danger"  id="out"href="user_logout">Logout</a>
+{% endif %}
+<div class="msg">
+    <p></p>
+</div>
+<div class="main">
+    <div class="events">
+        <a href="show_event">
+            <h2 id="ub">Upcomming Events</h3>
+            <img src='{% static "images/1.jpg" %}' height="300px" width="300px">
+           
+        </a>
+    </div>
+    <div class="book">
+        <a href="ground_booking"><h2 id="ub">Book Ground</h3>
+            
+            <img src='{% static "images/2.jpg" %}' height="300px" width="300px">
+            
+        </a>
+    </div>
+</div>
+{% endblock %}

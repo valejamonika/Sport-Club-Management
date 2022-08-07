@@ -1,0 +1,47 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family:Fixedsys;
+    color: dimgray;
+}
+body
+{
+    background-color: gainsboro;
+}
+.data
+{
+    margin: 100px 190px;
+    
+}
+table
+{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+  
+}
+table, tr,th,td
+{
+    border: 2px solid rgb(21, 21, 24);
+    border-collapse: collapse;
+    
+}
+#btn
+{
+
+    background-color: darkorange;
+    border: 3px solid white;
+    height: 100px;
+    width: 300px;
+    font-size: 25px;
+    padding: 10px;
+    margin: 30px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+#btn:hover{
+    background-color: transparent;
+    border: 3px solid red;
+    
+}
